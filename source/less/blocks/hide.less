@@ -1,0 +1,15 @@
+.hide--desktop {
+  display: inline;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.hide--phone {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
