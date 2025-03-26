@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: @white;
+  background: @main-blue;
+  padding: 14.5px 32px 17.5px 32px;
+  border: none;
+  text-transform: uppercase;
+
+  &:hover {
+    background: @button-hover;
+  }
+
+  &:active {
+    background: @button-down;
+    color: fade(@white, 30%);
+  }
+
+  &:disabled {
+    background: @input-hover;
+  }
+}
